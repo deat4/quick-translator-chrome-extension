@@ -37,6 +37,11 @@ Quick Translator 是一个 Chrome 浏览器扩展，允许用户快速翻译网�
 - `translator.js`: 包含翻译逻辑和 API 调用的脚本
 - `crypto-js.min.js`: 用于 API 签名的加密库
 
+## 配置
+
+1. 复制 `config.example.js` 为 `config.js`
+2. 在 `config.js` 中填入您的有道翻译 API 密钥
+
 ## 开发
 
 ### 前提条件

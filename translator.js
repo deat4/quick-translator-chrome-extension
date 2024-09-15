@@ -1,5 +1,7 @@
 console.log('Translator script loading...');
 
+import { YOUDAO_APP_KEY, YOUDAO_SECRET_KEY } from './config.js';
+
 if (typeof CryptoJS === 'undefined') {
     console.error('CryptoJS is not defined. Make sure crypto-js.min.js is loaded correctly.');
 } else {
@@ -8,8 +10,8 @@ if (typeof CryptoJS === 'undefined') {
 
 function translateText(text, from, to) {
     console.log('translateText called with:', { text, from, to });
-    const appKey = '13a431dfcc12c491';
-    const key = 'TqGX88YM1KNh60peUGFeDN3NZ70InVmY';
+    const appKey = YOUDAO_APP_KEY;
+    const key = YOUDAO_SECRET_KEY;
     const salt = new Date().getTime();
     const curtime = Math.round(new Date().getTime() / 1000);
     const str1 = appKey + truncate(text) + salt + curtime + key;
