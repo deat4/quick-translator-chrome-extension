@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Quick Translator Settings</title>
+  <style>
+    body { 
+      width: 300px; 
+      padding: 10px; 
+      font-family: Arial, sans-serif;
+    }
+    select, button { 
+      width: 100%; 
+      margin-bottom: 10px; 
+      padding: 5px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>翻译设置</h2>
+  <select id="targetLanguage">
+    <option value="en">英语</option>
+    <option value="fr">法语</option>
+    <option value="de">德语</option>
+    <option value="ja">日语</option>
+    <option value="ko">韩语</option>
+    <option value="es">西班牙语</option>
+  </select>
+  <button id="save">保存</button>
+  <script src="popup.js"></script>
+</body>
+</html>
